@@ -95,7 +95,7 @@ const CV = () => {
             }
           </ul>
         </div>
-        <div className='w-full mt-14 flex justify-center' >
+        <div className='w-full mt-4 md:mt-14 flex justify-center' >
           <LikeBtn />
         </div>
       </div>
