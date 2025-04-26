@@ -1,0 +1,12 @@
+@import "./reset.css";
+@import "tailwindcss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
