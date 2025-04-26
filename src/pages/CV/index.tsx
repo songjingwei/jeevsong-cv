@@ -60,12 +60,17 @@ const CV = () => {
           <div className="relative top-2">
             <Logo size={45} />
           </div>
-          <LinkText level={1} content="宋玉坤" id="title" href="#title" />
+          <LinkText level={1} content="宋玉坤" id="title" href="https://github.com/songjingwei" />
         </div>
         <p className="mb-10">
           大家好，我叫宋玉坤，目前从事软件开发的工作。<br />
           出生于 1996 年 04 月 04 日，江苏泰州人，身高 66.93 英寸，体重 154.32 磅。<br />
-          欢迎大家内推我！
+          <p className='mt-2'>
+            喜欢的语言：JavaScript、Python、C++ <br />
+            喜欢的编辑器：Neovim、VsCode、VS  <br />
+            喜欢的框架：React、Nestjs、Qt、Electron <br />
+          </p>
+          <p className="mt-2">欢迎大家内推我！</p>
         </p>
         <div>
           <LinkText level={2} content="工作经历" id="experience" href="#experience" />
