@@ -21,10 +21,10 @@ const JobItem = (props: IJobItem) => {
         <div className="w-[300px]">
           <LinkText level={3} content={company} id={company} href={href} />
         </div>
-        <div className="hidden md:block w-[300px] mt-1 text-2xl">
+        <div className="hidden md:block w-[300px] mt-1 text-xl">
           {department}
         </div>
-        <div className='hidden md:block text-2xl'>
+        <div className='hidden md:block text-xl'>
           {startTime || '未知'} — {endTime || '至今'}
         </div>
       </div>

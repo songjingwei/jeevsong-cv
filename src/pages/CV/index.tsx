@@ -55,7 +55,7 @@ const jobs = [
 const CV = () => {
 
   return (
-    <div className="w-full h-full px-8 py-4 bg-[#181818] text-[#eee] text-2xl cv-container overflow-auto">
+    <div className="w-full h-full px-8 py-4 bg-[#181818] text-[#eee] text-xl cv-container overflow-auto">
       <div className="lg:w-[1000px] m-auto">
         <div className='flex items-center gap-6 mb-10'>
           <div className="relative top-2">

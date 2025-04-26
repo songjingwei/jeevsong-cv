@@ -9,7 +9,7 @@ interface ILinkText {
 
 const LinkText = (props: ILinkText) => {
   const { level, id, content, href } = props
-  const fontSize = Math.max(48 * (5 - level) / 4, 18)
+  const fontSize = Math.max(36 * (5 - level) / 4, 18)
   if (level === 1) {
     return (
       <h1 style={{ fontSize }} id={id}>

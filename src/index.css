@@ -18,3 +18,19 @@ body {
   width: 100%;
   height: 100%;
 }
+
+
+body:has(.logo:active) a:link,
+body:has(.logo:active) a:visited {
+  text-decoration-color: #f43841;
+}
+
+body:has(.logo:hover) .logo {
+  border-radius: 50%;
+}
+
+body:has(.logo:active) .logo {
+  border-radius: 0;
+  background-color: #f43841;
+  rotate: 45deg;
+}
