@@ -1,6 +1,7 @@
 import Logo from './components/Logo'
 import LinkText from './components/LinkText'
 import JobItem from './components/JobItem'
+import LikeBtn from '@/components/LikeBtn'
 
 import './cv.css'
 
@@ -93,6 +94,9 @@ const CV = () => {
               })
             }
           </ul>
+        </div>
+        <div className='w-full mt-14 flex justify-center' >
+          <LikeBtn />
         </div>
       </div>
     </div>
