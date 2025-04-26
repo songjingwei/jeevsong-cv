@@ -37,7 +37,7 @@ const Header = () => {
           after:bg-[#73c936] hover:after:w-full after:transition-all">
               首页
             </Link>
-            <Link to="/demo" className="text-gray-300 hover:text-white transition-colors duration-200 relative 
+            <Link to="/demos" className="text-gray-300 hover:text-white transition-colors duration-200 relative 
           after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-[2px] 
           after:bg-[#73c936] hover:after:w-full after:transition-all">
               项目

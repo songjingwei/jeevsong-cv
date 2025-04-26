@@ -30,7 +30,7 @@ const Home = () => {
       <div className="container mx-auto px-4 py-24 text-center">
         {/* 标题部分 */}
         <motion.h1
-          className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-green-400 to-[#73c936] bg-clip-text text-transparent"
+          className="h-[75px] text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-green-400 to-[#73c936] bg-clip-text text-transparent overflow-visible"
           initial={{ scale: 0.9 }}
           animate={{ scale: 1 }}
           transition={{ type: 'spring', stiffness: 100 }}
