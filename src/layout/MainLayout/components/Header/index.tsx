@@ -21,14 +21,14 @@ const Header = () => {
               active:rounded-none active:rotate-45 active:from-red-500 
               active:to-[#ff4444] transition-all duration-200 logo">
             </button>
-            <span className="
+            <Link to="/home" className="
               text-2xl font-bold text-transparent 
               bg-clip-text bg-gradient-to-r from-green-400 to-[#73c936] 
               group-active/logo:from-red-500 group-active/logo:to-[#ff4444] 
               transition-all duration-200"
             >
               JeevSong 的客栈
-            </span>
+            </Link>
           </div>
           {/* <!-- 导航链接 --> */}
           <div className="hidden md:flex items-center space-x-8">
