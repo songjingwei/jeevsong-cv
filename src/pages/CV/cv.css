@@ -1,0 +1,15 @@
+.cv-container:has(.logo:active) a:link,
+.cv-container:has(.logo:active) a:visited {
+  text-decoration-color: #f43841;
+}
+
+.cv-container:has(.logo:hover) .logo {
+  border-radius: 50%;
+}
+
+.cv-container:has(.logo:active) .logo {
+  border-radius: 0;
+  background-color: #f43841;
+  rotate: 45deg;
+}
+
