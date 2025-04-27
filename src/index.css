@@ -34,3 +34,10 @@ body:has(.logo:active) .logo {
   background-color: #f43841;
   rotate: 45deg;
 }
+
+
+@keyframes flame-pulse {
+  0% { filter: blur(10px) opacity(0.8); }
+  50% { filter: blur(20px) opacity(1); }
+  100% { filter: blur(10px) opacity(0.8); }
+}
