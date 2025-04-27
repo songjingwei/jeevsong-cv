@@ -1,6 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import useSound from 'use-sound';
 
+import counterApi from '@/api/counter';
+
 interface FlameParticle {
   id: number;
   x: number;
@@ -67,16 +69,26 @@ function LikeBtn() {
     return () => cancelAnimationFrame(animationFrame);
   }, []);
 
+  useEffect(() => {
+    counterApi.getValue().then(res => {
+      console.log('res: ', res)
+      if (res.ret === 0) {
+        setCount(res.data);
+      }
+    })
+  }, [])
+
   const handleClick = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
 
-    setPlaybackRate(prev => Math.min(prev + 0.1, 1.5));
-    setCount(prev => prev + 1);
-    setHeat(prev => Math.min(prev + 0.3, 1.5)); // 允许超过1的热量值
+    setPlaybackRate(prev => Math.min(prev + 0.1, 1.5))
+    setCount(prev => prev + 1)
+    setHeat(prev => Math.min(prev + 0.3, 1.5)) // 允许超过1的热量值
     spawnFlame(centerX, centerY);
-    play();
+    play()
+    counterApi.incrementValue()
   };
 
   // 热量衰减（更慢的冷却速度）
